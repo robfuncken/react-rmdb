@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './FourColGrid.css';
 
 const FourColGrid = (props) => {
@@ -24,4 +25,8 @@ const FourColGrid = (props) => {
   )
 }
 
-export default FourColGrid;
+FourColGrid.propTypes = {
+  header: PropTypes.string,
+  loading: PropTypes.bool
+}
+export default FourColGrid; 
